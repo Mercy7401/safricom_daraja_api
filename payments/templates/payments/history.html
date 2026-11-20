@@ -1,0 +1,10 @@
+{% extends "payments/base.html" %}
+{% block content %}
+<table class="table table-sm bg-white">
+  <tr><th>Phone</th><th>KES</th><th>Status</th><th>Receipt</th></tr>
+  {% for p in payments %}
+  <tr><td>{{ p.phone }}</td><td>{{ p.amount }}</td><td>{{ p.status }}</td><td>{{ p.mpesa_receipt }}</td></tr>
+  {% endfor %}
+</table>
+<a href="{% url 'home' %}">Back</a>
+{% endblock %}

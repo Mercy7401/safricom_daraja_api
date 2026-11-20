@@ -1,0 +1,12 @@
+SECRET_KEY=change-me
+DEBUG=True
+CONSUMER_KEY=your_key
+CONSUMER_SECRET=your_secret
+SHORTCODE=174379
+PASSKEY=bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
+CALLBACK_URL=https://yourusername.pythonanywhere.com/callback/
+DB_ENGINE=Mysql
+DB_NAME=safricom_daraja_api
+DB_USER=root
+DB_PASSWORD=Safaricom_Daraja_API@2026
+DB_HOST=localhost

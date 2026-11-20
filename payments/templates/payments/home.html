@@ -1,0 +1,12 @@
+{% extends "payments/base.html" %}
+{% block content %}
+<form method="post" class="card card-body shadow-sm">
+  {% csrf_token %}
+  <label class="form-label">Phone number</label>
+  <input name="phone" class="form-control mb-3" placeholder="07XXXXXXXX" required>
+  <label class="form-label">Amount (KES)</label>
+  <input name="amount" type="number" min="1" class="form-control mb-3" required>
+  <button class="btn btn-success">Pay with M-Pesa</button>
+</form>
+<a href="{% url 'history' %}" class="d-block mt-3">View payments</a>
+{% endblock %}
